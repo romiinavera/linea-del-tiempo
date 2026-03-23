@@ -260,19 +260,22 @@ body { font-family:'Source Sans 3',sans-serif; background:var(--bg); color:var(-
   <strong>Referencias Bibliográficas</strong><br><br>
   AICAD Business School. (s.f.). <em>Línea del tiempo de la evolución de la tecnología.</em> https://www.aicad.es/linea-del-tiempo-de-la-evolucion-de-la-tecnologia<br>
   CERN. (s.f.). <em>A short history of the Web.</em> https://home.cern/science/computing/birth-web/short-history-web<br>
+  Dataversity. (s.f.). <em>A brief history of generative AI.</em> https://www.dataversity.net/articles/a-brief-history-of-generative-ai/<br>
   Gordon-Conwell Theological Seminary. (s.f.). <em>Baghdad's House of Wisdom.</em> https://www.gordonconwell.edu/blog/baghdads-house-of-wisdom/<br>
   HP Tech Takes. (s.f.). <em>Computer history: All about the ENIAC.</em> https://www.hp.com/us-en/shop/tech-takes/computer-history-all-about-the-eniac<br>
-  Kuhn, T. S. (2004). <em>La estructura de las revoluciones científicas</em> (2.ª ed.). Fondo de Cultura Económica.<br>
+  LibreTexts Español. (s.f.). <em>Serendipia en la ciencia: rayos X y radiactividad.</em> https://espanol.libretexts.org/Bookshelves/Quimica/Qu%C3%ADmica_Introductoria%2C_Conceptual_y_GOB/Qu%C3%ADmica_para_Tiempos_Cambiantes_(Hill_y_McCreary)/03%3A_Estructura_at%C3%B3mica/3.02%3A_Serendipia_en_la_Ciencia_-_Rayos_X_y_Radiactividad<br>
   NASA. (2023). <em>120 years ago: The first powered flight at Kitty Hawk.</em> https://www.nasa.gov/history/120-years-ago-the-first-powered-flight-at-kitty-hawk/<br>
+  National Geographic. (2024). <em>La carrera espacial, paso a paso.</em> https://www.nationalgeographic.com.es/llegada-del-hombre-a-la-luna/carrera-espacial-paso-a-paso_14369<br>
+  National Geographic. (2024). <em>Principia Mathematica: el legado de Newton en la divulgación científica.</em> https://www.nationalgeographic.com.es/ciencia/principia-mathematica-legado-newton-divulgacion-cientifica_21675<br>
   National Geographic América Latina. (2024). <em>¿Cuál es el origen de Internet?</em> https://www.nationalgeographicla.com/historia/2024/05/cual-es-el-origen-de-internet<br>
   National Geographic Historia. (2024). <em>Así se originó la escritura en la antigua Mesopotamia.</em> https://historia.nationalgeographic.com.es/a/asi-se-origino-escritura-antigua-mesopotamia_20605<br>
+  National Geographic Historia. (2024). <em>¿Cuándo inventamos la rueda?</em> https://historia.nationalgeographic.com.es/a/cuando-inventamos-rueda-este-hallazgo-desafia-que-creiamos_22588<br>
   National Geographic Historia. (2024). <em>Gutenberg: el inventor que cambió el mundo.</em> https://historia.nationalgeographic.com.es/a/gutenberg-inventor-que-cambio-mundo_11140<br>
   National Geographic Historia. (2024). <em>Nicolás Copérnico y la revolución del cosmos.</em> https://historia.nationalgeographic.com.es/a/nicolas-copernico-y-revolucion-cosmos_13321<br>
-  National Geographic Historia. (2024). <em>¿Cuándo inventamos la rueda?</em> https://historia.nationalgeographic.com.es/a/cuando-inventamos-rueda-este-hallazgo-desafia-que-creiamos_22588<br>
+  Telefónica. (s.f.). <em>Redes sociales: origen e historia.</em> https://www.telefonica.com/es/sala-comunicacion/blog/redes-sociales-origen-historia/<br>
   Telefónica. (2024). <em>9 inventos tecnológicos que han cambiado el mundo.</em> https://www.telefonica.com/es/sala-comunicacion/blog/9-inventos-tecnologicos-cambiado-mundo/<br>
-  Vivelibre. (2024). <em>Evolución de la tecnología: desde la prehistoria hasta la era digital.</em> https://www.vivelibre.es/evolucion-de-la-tecnologia-desde-la-prehistoria-hasta-la-era-digital/<br>
-  Wikipedia. (2024). <em>Historia de la tecnología.</em> https://es.wikipedia.org/wiki/Historia_de_la_tecnolog%C3%ADa<br>
-  Wikipedia. (2024). <em>Revolución científica.</em> https://es.wikipedia.org/wiki/Revoluci%C3%B3n_cient%C3%ADfica<br>
+  World History Encyclopedia. (2024). <em>Filosofía griega.</em> https://www.worldhistory.org/trans/es/1-11892/filosofia-griega/<br>
+  World History Encyclopedia. (2024). <em>El telescopio y la revolución científica.</em> https://www.worldhistory.org/trans/es/2-2270/el-telescopio-y-la-revolucion-cientifica/<br>
   World History Encyclopedia. (2024). <em>La máquina de vapor de Watt.</em> https://www.worldhistory.org/trans/es/1-21774/la-maquina-de-vapor-de-watt/
 </div>
 
@@ -412,74 +415,168 @@ const eras = ERAS_DEF.map(e => ({...e, dot:e.color}));
 
 const events = [
   {year:"~3500 a.C.",era:"antigua",badge:"Antigüedad",title:"Invención de la rueda",
-   detail:"<p>Desarrollada en Mesopotamia a partir de troncos rodantes. Transformó el transporte, la alfarería y sentó las bases de toda la ingeniería mecánica. Algunos hallazgos recientes desafían la cronología establecida sobre su origen (National Geographic Historia, 2024).</p><p>Su impacto fue inmediato: catalizó el desarrollo de sistemas de irrigación y construcción monumental (Vivelibre, 2024).</p>",
-   ficha:[{label:"Lugar",value:"Mesopotamia (actual Irak)"},{label:"Área",value:"Ingeniería mecánica"},{label:"Impacto",value:"Transporte, alfarería, irrigación, mecanismos"},{label:"Referencia",value:"National Geographic Historia (2024); Vivelibre (2024)"}],
-   cite:"National Geographic Historia. (2024). ¿Cuándo inventamos la rueda? https://historia.nationalgeographic.com.es/a/cuando-inventamos-rueda-este-hallazgo-desafia-que-creiamos_22588 — Vivelibre. (2024). Evolución de la tecnología. https://www.vivelibre.es/evolucion-de-la-tecnologia-desde-la-prehistoria-hasta-la-era-digital/"},
-  {year:"~3000 a.C.",era:"antigua",badge:"Antigüedad",title:"Escritura cuneiforme y jeroglíficos",
-   detail:"<p>Los sumerios desarrollaron la escritura cuneiforme en tablillas de arcilla para registrar leyes, transacciones y astronomía. Los egipcios, de forma independiente, crearon los jeroglíficos (National Geographic Historia, 2024).</p><p>Por primera vez el conocimiento podía preservarse más allá de la memoria individual, permitiendo que cada generación construyera sobre los logros de la anterior (Wikipedia, 2024).</p>",
-   ficha:[{label:"Culturas",value:"Sumerios (Mesopotamia) y Egipcios"},{label:"Soporte",value:"Tablillas de arcilla, papiro"},{label:"Área",value:"Tecnología comunicacional"},{label:"Referencia",value:"National Geographic Historia (2024); Wikipedia (2024)"}],
-   cite:"National Geographic Historia. (2024). Así se originó la escritura en la antigua Mesopotamia. https://historia.nationalgeographic.com.es/a/asi-se-origino-escritura-antigua-mesopotamia_20605 — Wikipedia. (2024). Historia de la tecnología. https://es.wikipedia.org/wiki/Historia_de_la_tecnolog%C3%ADa"},
-  {year:"~600 a.C.",era:"antigua",badge:"Antigüedad",title:"Filosofía natural griega",
-   detail:"<p>Tales, Pitágoras, Euclides y Aristóteles explicaron el mundo mediante razón y observación, separando el saber del mito. La Biblioteca de Alejandría institucionalizó esta empresa colectiva (Wikipedia, 2024).</p><p>Para Kuhn (2004), esta ruptura conceptual es esencial: la ciencia avanza cuestionando los paradigmas vigentes.</p>",
-   ficha:[{label:"Figuras",value:"Tales, Pitágoras, Euclides, Aristóteles"},{label:"Período",value:"~600–300 a.C."},{label:"Área",value:"Filosofía natural / Epistemología"},{label:"Referencia",value:"Wikipedia (2024); Kuhn (2004)"}],
-   cite:"Wikipedia. (2024). Historia de la tecnología. https://es.wikipedia.org/wiki/Historia_de_la_tecnolog%C3%ADa — Kuhn, T. S. (2004). La estructura de las revoluciones científicas (2.ª ed.). Fondo de Cultura Económica."},
-  {year:"~300–250 a.C.",era:"antigua",badge:"Antigüedad",title:"Alejandría y Arquímedes",
-   detail:"<p>La Biblioteca de Alejandría fue el primer gran centro de investigación. Euclides sistematizó la geometría en los <em>Elementos</em>. Arquímedes desarrolló la palanca, la flotabilidad y el tornillo hidráulico, demostrando cómo el conocimiento matemático se traduce en soluciones prácticas (Kuhn, 2004).</p>",
-   ficha:[{label:"Lugar",value:"Alejandría, Egipto"},{label:"Figuras",value:"Euclides, Arquímedes, Eratóstenes"},{label:"Área",value:"Matemática, mecánica, hidrostática"},{label:"Referencia",value:"Kuhn (2004); Wikipedia (2024)"}],
-   cite:"Kuhn, T. S. (2004). La estructura de las revoluciones científicas (2.ª ed.). Fondo de Cultura Económica. — Wikipedia. (2024). Historia de la tecnología. https://es.wikipedia.org/wiki/Historia_de_la_tecnolog%C3%ADa"},
+   detail:"<p>La rueda es uno de los inventos más importantes de la historia de la humanidad, ya que permitió transportar cargas a largas distancias y favoreció el desarrollo del comercio y la comunicación entre distintas regiones. Tradicionalmente se cree que surgió hace unos 6.000 años, aunque investigaciones recientes sugieren que sus orígenes podrían ser aún más antiguos y complejos de lo que se pensaba.</p><p>Su impacto fue decisivo: posibilitó avances en el transporte, la producción y la organización de las sociedades, convirtiéndose en un elemento fundamental para el desarrollo de la civilización (National Geographic Historia, 2024).</p>",
+   ficha:[{label:"Lugar",value:"Mesopotamia (actual Irak)"},{label:"Área",value:"Tecnología/Transporte"},{label:"Impacto",value:"Transporte, producción, comercio"},{label:"Referencia",value:"National Geographic Historia (2024)"}],
+   cite:"National Geographic Historia. (2024). ¿Cuándo inventamos la rueda? https://historia.nationalgeographic.com.es/a/cuando-inventamos-rueda-este-hallazgo-desafia-que-creiamos_22588"},
+  
+  {
+    year:"~3000 a.C.",
+    era:"antigua",
+    badge:"Antigüedad",
+    title:"Escritura cuneiforme",
+    detail:"<p>La escritura surgió en la antigua Mesopotamia como una necesidad de registrar información, especialmente en actividades comerciales y administrativas. Los sumerios desarrollaron la escritura cuneiforme sobre tablillas de arcilla, utilizando signos que representaban objetos y conceptos.</p><p>Este avance permitió conservar información de forma duradera y facilitó la organización de las primeras sociedades complejas, marcando un cambio fundamental en la transmisión del conocimiento (National Geographic Historia, 2024).</p>",
+    ficha:[
+      {label:"Cultura",value:"Sumerios (Mesopotamia)"},
+      {label:"Soporte",value:"Tablillas de arcilla"},
+      {label:"Área",value:"Comunicación / Escritura"},
+      {label:"Referencia",value:"National Geographic Historia (2024)"}
+    ],
+    cite:"National Geographic Historia. (2024). Así se originó la escritura en la antigua Mesopotamia. https://historia.nationalgeographic.com.es/a/asi-se-origino-escritura-antigua-mesopotamia_20605"
+  },
+  
+  {
+    year:"~600 a.C.",
+    era:"antigua",
+    badge:"Antigüedad",
+    title:"Filosofía natural griega",
+    detail:"<p>En la antigua Grecia surgió una nueva forma de entender el mundo basada en la razón y la observación, dejando de lado las explicaciones mitológicas. Filósofos como Tales, Pitágoras y Aristóteles comenzaron a buscar explicaciones racionales sobre la naturaleza y el universo, sentando las bases del pensamiento científico.</p><p>Este cambio marcó un punto clave en la historia del conocimiento, ya que promovió el uso de la lógica y la reflexión como herramientas fundamentales para comprender la realidad (World History Encyclopedia, 2024).</p>",
+    ficha:[
+      {label:"Figuras",value:"Tales, Pitágoras, Aristóteles"},
+      {label:"Período",value:"~600–300 a.C."},
+      {label:"Área",value:"Filosofía / Pensamiento científico"},
+      {label:"Referencia",value:"World History Encyclopedia (2024)"}
+    ],
+    cite:"World History Encyclopedia. (2024). Filosofía griega. https://www.worldhistory.org/trans/es/1-11892/filosofia-griega/"
+  },
+  {
+    year:"~300 a.C.",
+    era:"antigua",
+    badge:"Antigüedad",
+    title:"Biblioteca de Alejandría",
+    detail:"<p>La Biblioteca de Alejandría fue uno de los mayores centros de conocimiento de la Antigüedad, creada con el objetivo de reunir y conservar todas las obras del saber humano. Llegó a albergar cientos de miles de rollos, convirtiéndose en un símbolo del desarrollo intelectual y científico de su época.</p><p>Su desaparición representó una de las mayores pérdidas culturales de la historia, ya que implicó la destrucción de una gran cantidad de conocimientos acumulados durante siglos (National Geographic Historia, 2024).</p>",
+    ficha:[
+      {label:"Lugar",value:"Alejandría, Egipto"},
+      {label:"Período",value:"~300 a.C."},
+      {label:"Área",value:"Conocimiento / Cultura"},
+      {label:"Referencia",value:"National Geographic Historia (2024)"}
+    ],
+    cite:"National Geographic Historia. (2024). La Biblioteca de Alejandría. https://historia.nationalgeographic.com.es/a/biblioteca-alejandria-destruccion-gran-centro-saber-antiguedad_8593"
+  },
   {year:"~105 d.C.",era:"media",badge:"Edad Media",title:"Invención del papel (China)",
    detail:"<p>Cai Lun (dinastía Han) perfeccionó la fabricación del papel con fibras vegetales. Mucho más barato que el pergamino o el papiro, el proceso se mantuvo en secreto siglos antes de llegar a Europa vía el mundo árabe (Historia de los Materiales — UBU, s.f.).</p>",
    ficha:[{label:"Inventor",value:"Cai Lun (dinastía Han, China)"},{label:"Material",value:"Fibras vegetales, corteza, trapos"},{label:"Llegada a Europa",value:"~Siglo X, vía mundo árabe"},{label:"Referencia",value:"Historia de los Materiales — UBU (s.f.)"}],
    cite:"Historia de los Materiales — Universidad de Burgos. (s.f.). El papel. https://historiamateriales.ubuinvestiga.es/papel/"},
-  {year:"~830 d.C.",era:"media",badge:"Edad Media",title:"Casa de la Sabiduría — Al-Juarismi",
-   detail:"<p>Bajo el califato abasí, la Casa de la Sabiduría (Bayt al-Hikmah) tradujo y preservó textos griegos, persas e indios. Al-Juarismi desarrolló allí el álgebra (<em>al-jabr</em>) y el concepto de algoritmo (Gordon-Conwell, s.f.).</p><p>La palabra 'algoritmo' deriva de su nombre. Sin este trabajo, la computación moderna no existiría (Wikipedia, 2024).</p>",
-   ficha:[{label:"Lugar",value:"Bagdad (califato abasí)"},{label:"Figura clave",value:"Al-Juarismi (~780–850 d.C.)"},{label:"Aporte",value:"Álgebra (al-jabr) y concepto de algoritmo"},{label:"Referencia",value:"Gordon-Conwell (s.f.); Wikipedia (2024)"}],
-   cite:"Gordon-Conwell Theological Seminary. (s.f.). Baghdad's House of Wisdom. https://www.gordonconwell.edu/blog/baghdads-house-of-wisdom/ — Wikipedia. (2024). Historia de la tecnología. https://es.wikipedia.org/wiki/Historia_de_la_tecnolog%C3%ADa"},
-  {year:"1440",era:"media",badge:"Edad Media",title:"Imprenta de tipos móviles — Gutenberg",
+  
+  {
+    year:"~830 d.C.",
+    era:"media",
+    badge:"Edad Media",
+    title:"Casa de la Sabiduría — Al-Juarismi",
+    detail:"<p>Bajo el califato abasí, la Casa de la Sabiduría en Bagdad fue un importante centro de conocimiento donde se tradujeron y preservaron textos de distintas culturas, como la griega, persa e india. En este contexto, Al-Juarismi realizó importantes aportes al desarrollar el álgebra (<em>al-jabr</em>) y sentar las bases del concepto de algoritmo (Gordon-Conwell, s.f.).</p><p>El término “algoritmo” deriva de su nombre, reflejando la importancia de sus contribuciones en el desarrollo de las matemáticas y la computación.</p>",
+    ficha:[
+      {label:"Lugar",value:"Bagdad (califato abasí)"},
+      {label:"Figura clave",value:"Al-Juarismi (~780–850 d.C.)"},
+      {label:"Aporte",value:"Álgebra (al-jabr) y concepto de algoritmo"},
+      {label:"Referencia",value:"Gordon-Conwell (s.f.)"}
+    ],
+    cite:"Gordon-Conwell Theological Seminary. (s.f.). Baghdad's House of Wisdom. https://www.gordonconwell.edu/blog/baghdads-house-of-wisdom/"
+  },
+   {year:"1440",era:"media",badge:"Edad Media",title:"Imprenta de tipos móviles — Gutenberg",
    detail:"<p>Johannes Gutenberg perfeccionó en Maguncia un sistema de impresión con tipos móviles de metal. La Biblia de Gutenberg (~1455) fue el primer libro producido en masa en Europa. El número de libros pasó de miles a millones en pocas décadas, creando las condiciones para la Revolución Científica (National Geographic Historia, 2024).</p>",
    ficha:[{label:"Inventor",value:"Johannes Gutenberg (~1400–1468)"},{label:"Lugar",value:"Maguncia, Alemania"},{label:"Primera obra",value:"Biblia de Gutenberg (~1455)"},{label:"Referencia",value:"National Geographic Historia (2024)"}],
    cite:"National Geographic Historia. (2024). Gutenberg: el inventor que cambió el mundo. https://historia.nationalgeographic.com.es/a/gutenberg-inventor-que-cambio-mundo_11140"},
-  {year:"1543",era:"moderna",badge:"Era Moderna",title:"Heliocentrismo — Copérnico",
-   detail:"<p>En 1543, Copérnico publicó <em>De revolutionibus orbium coelestium</em>, proponiendo que la Tierra gira alrededor del Sol, desafiando 15 siglos de modelo geocéntrico (National Geographic Historia, 2024).</p><p>Para Kuhn (2004), es el ejemplo más claro de cambio de paradigma: un modelo establecido reemplazado por uno nuevo ante la acumulación de anomalías.</p>",
-   ficha:[{label:"Figura",value:"Nicolás Copérnico (1473–1543)"},{label:"Obra",value:"De revolutionibus orbium coelestium"},{label:"Impacto",value:"Primer cambio de paradigma moderno (Kuhn, 2004)"},{label:"Referencia",value:"National Geographic Historia (2024); Kuhn (2004)"}],
-   cite:"National Geographic Historia. (2024). Nicolás Copérnico y la revolución del cosmos. https://historia.nationalgeographic.com.es/a/nicolas-copernico-y-revolucion-cosmos_13321 — Kuhn, T. S. (2004). La estructura de las revoluciones científicas (2.ª ed.). Fondo de Cultura Económica."},
-  {year:"1609",era:"moderna",badge:"Era Moderna",title:"Telescopio y astronomía experimental — Galileo",
-   detail:"<p>Galileo perfeccionó el telescopio y observó las lunas de Júpiter y las fases de Venus, aportando prueba directa del heliocentrismo. Estableció que la naturaleza está escrita en lenguaje matemático y que el experimento controlado es la forma válida de conocerla (Wikipedia, 2024).</p>",
-   ficha:[{label:"Figura",value:"Galileo Galilei (1564–1642)"},{label:"Instrumento",value:"Telescopio refractor mejorado"},{label:"Método",value:"Experimento controlado + lenguaje matemático"},{label:"Referencia",value:"Wikipedia (2024)"}],
-   cite:"Wikipedia. (2024). Revolución científica. https://es.wikipedia.org/wiki/Revoluci%C3%B3n_cient%C3%ADfica"},
-  {year:"1687",era:"moderna",badge:"Era Moderna",title:"Principia Mathematica — Newton",
-   detail:"<p>Newton publicó <em>Philosophiæ Naturalis Principia Mathematica</em>, unificando mecánica terrestre y astronomía en un único sistema. Inventó el cálculo diferencial e integral. Sus tres leyes del movimiento siguen siendo base del diseño ingenieril moderno (Wikipedia, 2024).</p><p>Para Kuhn (2004), la mecánica newtoniana dominó la física durante más de dos siglos hasta la llegada de Einstein.</p>",
-   ficha:[{label:"Figura",value:"Isaac Newton (1643–1727)"},{label:"Obra",value:"Principia Mathematica (1687)"},{label:"Legado",value:"Paradigma dominante por más de 200 años"},{label:"Referencia",value:"Wikipedia (2024); Kuhn (2004)"}],
-   cite:"Wikipedia. (2024). Revolución científica. https://es.wikipedia.org/wiki/Revoluci%C3%B3n_cient%C3%ADfica — Kuhn, T. S. (2004). La estructura de las revoluciones científicas (2.ª ed.). Fondo de Cultura Económica."},
-  {year:"1769",era:"industrial",badge:"Rev. Industrial",title:"Máquina de vapor — James Watt",
-   detail:"<p>Watt mejoró radicalmente la máquina de vapor incorporando el condensador separado y el movimiento rotativo. Trabajó con Matthew Boulton, inaugurando el modelo de vinculación ingeniero-empresa (World History Encyclopedia, 2024).</p><p>La máquina de vapor mecanizó la producción textil, impulsó la minería, hizo posible el ferrocarril y reorganizó la sociedad de agraria a industrial (Vivelibre, 2024).</p>",
-   ficha:[{label:"Figura",value:"James Watt (1736–1819)"},{label:"Mejora clave",value:"Condensador separado + movimiento rotativo"},{label:"Área",value:"Termodinámica aplicada"},{label:"Referencia",value:"World History Encyclopedia (2024); Vivelibre (2024)"}],
-   cite:"World History Encyclopedia. (2024). La máquina de vapor de Watt. https://www.worldhistory.org/trans/es/1-21774/la-maquina-de-vapor-de-watt/ — Vivelibre. (2024). Evolución de la tecnología. https://www.vivelibre.es/evolucion-de-la-tecnologia-desde-la-prehistoria-hasta-la-era-digital/"},
-  {year:"1820–1831",era:"industrial",badge:"Rev. Industrial",title:"Electromagnetismo — Ørsted, Ampère y Faraday",
+  {
+    year:"1543",
+    era:"moderna",
+    badge:"Era Moderna",
+    title:"Heliocentrismo — Copérnico",
+    detail:"<p>En 1543, Nicolás Copérnico publicó <em>De revolutionibus orbium coelestium</em>, donde propuso un modelo heliocéntrico en el que la Tierra y los demás planetas giran alrededor del Sol, cuestionando el modelo geocéntrico que había predominado durante siglos.</p><p>Esta propuesta cambió la forma de entender el universo y sentó las bases para el desarrollo de la astronomía moderna (National Geographic Historia, 2024).</p>",
+    ficha:[
+      {label:"Figura",value:"Nicolás Copérnico (1473–1543)"},
+      {label:"Obra",value:"De revolutionibus orbium coelestium"},
+      {label:"Impacto",value:"Cambio en la concepción del universo y base de la astronomía moderna"},
+      {label:"Referencia",value:"National Geographic Historia (2024)"}
+    ],
+    cite:"National Geographic Historia. (2024). Nicolás Copérnico y la revolución del cosmos. https://historia.nationalgeographic.com.es/a/nicolas-copernico-y-revolucion-cosmos_13321"
+  },
+  {
+    year:"1609",
+    era:"moderna",
+    badge:"Era Moderna",
+    title:"Telescopio y astronomía — Galileo",
+    detail:"<p>En 1609, Galileo Galilei mejoró el telescopio y lo utilizó para observar el cielo, realizando descubrimientos como las lunas de Júpiter y las fases de Venus. Estas observaciones aportaron evidencia importante que cuestionaba el modelo geocéntrico tradicional.</p><p>El uso del telescopio marcó un avance clave en la Revolución Científica, ya que permitió basar el conocimiento en la observación directa y el estudio del universo (World History Encyclopedia, 2024).</p>",
+    ficha:[
+      {label:"Figura",value:"Galileo Galilei (1564–1642)"},
+      {label:"Instrumento",value:"Telescopio"},
+      {label:"Aporte",value:"Observación astronómica y evidencia contra el geocentrismo"},
+      {label:"Referencia",value:"World History Encyclopedia (2024)"}
+    ],
+    cite:"World History Encyclopedia. (2024). El telescopio y la revolución científica. https://www.worldhistory.org/trans/es/2-2270/el-telescopio-y-la-revolucion-cientifica/"
+  },
+  {
+    year:"1687",
+    era:"moderna",
+    badge:"Era Moderna",
+    title:"Principia Mathematica — Newton",
+    detail:"<p>En 1687, Isaac Newton publicó <em>Philosophiæ Naturalis Principia Mathematica</em>, una obra fundamental en la que formuló las leyes del movimiento y la ley de gravitación universal, explicando tanto los fenómenos terrestres como los celestes dentro de un mismo marco teórico.</p><p>Este trabajo marcó un hito en la historia de la ciencia, ya que consolidó el uso de las matemáticas para explicar la naturaleza y sentó las bases de la física moderna (National Geographic, 2024).</p>",
+    ficha:[
+      {label:"Figura",value:"Isaac Newton (1643–1727)"},
+      {label:"Obra",value:"Principia Mathematica (1687)"},
+      {label:"Aporte",value:"Leyes del movimiento y gravitación universal"},
+      {label:"Referencia",value:"National Geographic (2024)"}
+    ],
+    cite:"National Geographic. (2024). Principia Mathematica: el legado de Newton en la divulgación científica. https://www.nationalgeographic.com.es/ciencia/principia-mathematica-legado-newton-divulgacion-cientifica_21675"
+  },
+  {
+    year:"1769",
+    era:"industrial",
+    badge:"Rev. Industrial",
+    title:"Máquina de vapor — James Watt",
+    detail:"<p>James Watt mejoró significativamente la máquina de vapor al incorporar el condensador separado y perfeccionar su funcionamiento, haciéndola mucho más eficiente. Trabajó junto a Matthew Boulton, facilitando su aplicación en la industria.</p><p>Estas mejoras permitieron ampliar el uso de la máquina de vapor en distintos sectores productivos, contribuyendo al desarrollo de la Revolución Industrial (World History Encyclopedia, 2024).</p>",
+    ficha:[
+      {label:"Figura",value:"James Watt (1736–1819)"},
+      {label:"Mejora clave",value:"Condensador separado"},
+      {label:"Área",value:"Tecnología industrial"},
+      {label:"Referencia",value:"World History Encyclopedia (2024)"}
+    ],
+    cite:"World History Encyclopedia. (2024). La máquina de vapor de Watt. https://www.worldhistory.org/trans/es/1-21774/la-maquina-de-vapor-de-watt/"
+  },
+   {year:"1820–1831",era:"industrial",badge:"Rev. Industrial",title:"Electromagnetismo — Ørsted, Ampère y Faraday",
    detail:"<p>Ørsted descubrió en 1820 que una corriente eléctrica genera un campo magnético. Ampère lo formalizó matemáticamente. Faraday descubrió la inducción electromagnética en 1831. El motor eléctrico, el generador y toda la infraestructura eléctrica moderna derivan de este trabajo (AICAD Business School, s.f.).</p>",
    ficha:[{label:"Figuras",value:"Ørsted, Ampère, Faraday, Maxwell"},{label:"Período",value:"1820–1873"},{label:"Aplicaciones",value:"Motor eléctrico, generador, transformador"},{label:"Referencia",value:"AICAD Business School (s.f.)"}],
    cite:"AICAD Business School. (s.f.). Línea del tiempo de la evolución de la tecnología. https://www.aicad.es/linea-del-tiempo-de-la-evolucion-de-la-tecnologia"},
   {year:"1876",era:"industrial",badge:"Rev. Industrial",title:"El teléfono — Alexander Graham Bell",
-   detail:"<p>Bell patentó el teléfono en 1876. Elisha Gray presentó su solicitud el mismo día, apenas horas después. Este caso ilustra cómo el progreso tecnológico suele ser un proceso paralelo en distintos actores (Telefónica, 2024).</p>",
+   detail:"<p>Bell patentó el teléfono en 1876. Ese mismo día, Elisha Gray también presentó una solicitud relacionada con este invento. Este caso ilustra cómo el progreso tecnológico suele ser un proceso paralelo en distintos actores (Telefónica, 2024).</p>",
    ficha:[{label:"Figura",value:"Alexander Graham Bell (1847–1922)"},{label:"Año",value:"1876 (patente)"},{label:"Área",value:"Telecomunicaciones"},{label:"Referencia",value:"Telefónica (2024)"}],
    cite:"Telefónica. (2024). 9 inventos tecnológicos que han cambiado el mundo. https://www.telefonica.com/es/sala-comunicacion/blog/9-inventos-tecnologicos-cambiado-mundo/"},
-  {year:"1895",era:"industrial",badge:"Rev. Industrial",title:"Rayos X y radiactividad — Röntgen y Curie",
-   detail:"<p>Röntgen descubrió los rayos X casi por accidente. Marie Curie investigó la radiactividad, término que ella misma acuñó, y fue la primera persona en ganar dos Nobel en distintas disciplinas (Vivelibre, 2024).</p><p>Kuhn (2004) ve en estos hitos el patrón de revolución científica: anomalías que abren un campo completamente nuevo.</p>",
-   ficha:[{label:"Figuras",value:"Wilhelm Röntgen, Marie Curie"},{label:"Año",value:"1895 (rayos X), 1898 (radiactividad)"},{label:"Impacto",value:"Medicina diagnóstica, física nuclear"},{label:"Referencia",value:"Vivelibre (2024); Kuhn (2004)"}],
-   cite:"Vivelibre. (2024). Evolución de la tecnología. https://www.vivelibre.es/evolucion-de-la-tecnologia-desde-la-prehistoria-hasta-la-era-digital/ — Kuhn, T. S. (2004). La estructura de las revoluciones científicas (2.ª ed.). Fondo de Cultura Económica."},
-  {year:"1903",era:"industrial",badge:"Rev. Industrial",title:"Primer vuelo motorizado — Hermanos Wright",
+  {
+    year:"1895",
+    era:"industrial",
+    badge:"Rev. Industrial",
+    title:"Rayos X y radiactividad — Röntgen y Curie",
+    detail:"<p>En 1895, Wilhelm Röntgen descubrió los rayos X de manera accidental mientras realizaba experimentos con radiación. Este hallazgo permitió observar el interior del cuerpo humano sin necesidad de cirugía, marcando un avance importante en la medicina.</p><p>Poco tiempo después, Marie Curie investigó la radiactividad, término que ella misma acuñó, ampliando el conocimiento sobre la estructura de la materia y abriendo nuevas áreas de estudio en la física y la química (LibreTexts Español, s.f.).</p>",
+    ficha:[
+      {label:"Figuras",value:"Wilhelm Röntgen, Marie Curie"},
+      {label:"Año",value:"1895 (rayos X), 1898 (radiactividad)"},
+      {label:"Impacto",value:"Medicina diagnóstica y estudio de la materia"},
+      {label:"Referencia",value:"LibreTexts Español (s.f.)"}
+    ],
+    cite:"LibreTexts Español. (s.f.). Serendipia en la ciencia: rayos X y radiactividad. https://espanol.libretexts.org/Bookshelves/Quimica/Qu%C3%ADmica_Introductoria%2C_Conceptual_y_GOB/Qu%C3%ADmica_para_Tiempos_Cambiantes_(Hill_y_McCreary)/03%3A_Estructura_at%C3%B3mica/3.02%3A_Serendipia_en_la_Ciencia_-_Rayos_X_y_Radiactividad"
+  },
+   {year:"1903",era:"industrial",badge:"Rev. Industrial",title:"Primer vuelo motorizado — Hermanos Wright",
    detail:"<p>El 17 de diciembre de 1903, en Kitty Hawk, Orville Wright mantuvo el Flyer I en el aire 12 segundos y recorrió 36 metros. Eran mecánicos de bicicletas: su logro fue posible mediante experimentación sistemática, no investigación académica (NASA, 2023).</p>",
    ficha:[{label:"Figuras",value:"Orville y Wilbur Wright"},{label:"Fecha",value:"17 de diciembre de 1903"},{label:"Lugar",value:"Kitty Hawk, Carolina del Norte"},{label:"Referencia",value:"NASA (2023)"}],
    cite:"NASA. (2023). 120 years ago: The first powered flight at Kitty Hawk. https://www.nasa.gov/history/120-years-ago-the-first-powered-flight-at-kitty-hawk/"},
   {year:"1945",era:"digital",badge:"Era Digital",title:"ENIAC — primera computadora electrónica",
-   detail:"<p>La ENIAC ocupaba 167 m², pesaba 27 toneladas, contenía 18.000 tubos de vacío y realizaba 5.000 sumas por segundo. Fue diseñada para calcular tablas de tiro de artillería (HP Tech Takes, s.f.).</p><p>El transistor (1947) y los microprocesadores democratizaron luego la computación y propiciaron el surgimiento de Internet (Vivelibre, 2024).</p>",
-   ficha:[{label:"Institución",value:"Universidad de Pensilvania"},{label:"Dimensiones",value:"167 m² · 27 toneladas · 18.000 tubos"},{label:"Velocidad",value:"5.000 sumas por segundo"},{label:"Referencia",value:"HP Tech Takes (s.f.); Vivelibre (2024)"}],
-   cite:"HP Tech Takes. (s.f.). Computer history: All about the ENIAC. https://www.hp.com/us-en/shop/tech-takes/computer-history-all-about-the-eniac — Vivelibre. (2024). Evolución de la tecnología. https://www.vivelibre.es/evolucion-de-la-tecnologia-desde-la-prehistoria-hasta-la-era-digital/"},
+  detail:"<p>La ENIAC ocupaba 167 m², pesaba 27 toneladas, contenía 18.000 tubos de vacío y realizaba 5.000 sumas por segundo. Fue diseñada para calcular tablas de tiro de artillería (HP Tech Takes, s.f.).</p>",
+  ficha:[{label:"Institución",value:"Universidad de Pensilvania"},{label:"Dimensiones",value:"167 m² · 27 toneladas · 18.000 tubos"},{label:"Velocidad",value:"5.000 sumas por segundo"},{label:"Referencia",value:"HP Tech Takes (s.f.)"}],
+  cite:"HP Tech Takes. (s.f.). Computer history: All about the ENIAC. https://www.hp.com/us-en/shop/tech-takes/computer-history-all-about-the-eniac"},
   {year:"1957",era:"digital",badge:"Era Digital",title:"Sputnik y el inicio de la era espacial",
-   detail:"<p>El lanzamiento del Sputnik soviético el 4 de octubre de 1957 inauguró la era espacial. Impulsó enormes inversiones en educación científica, electrónica y telecomunicaciones en todo el mundo (Vivelibre, 2024).</p>",
-   ficha:[{label:"País",value:"URSS"},{label:"Fecha",value:"4 de octubre de 1957"},{label:"Consecuencia",value:"Carrera espacial · Revolución en electrónica y educación científica"},{label:"Referencia",value:"Vivelibre (2024)"}],
-   cite:"Vivelibre. (2024). Evolución de la tecnología. https://www.vivelibre.es/evolucion-de-la-tecnologia-desde-la-prehistoria-hasta-la-era-digital/"},
-  {year:"1969",era:"digital",badge:"Era Digital",title:"ARPANET — origen de Internet",
+  detail:"<p>El 4 de octubre de 1957, la Unión Soviética lanzó el Sputnik 1, el primer satélite artificial de la historia, dando inicio a la carrera espacial entre Estados Unidos y la URSS (National Geographic, 2024).</p>",
+  ficha:[{label:"País",value:"URSS"},{label:"Fecha",value:"4 de octubre de 1957"},{label:"Consecuencia",value:"Inicio de la carrera espacial"},{label:"Referencia",value:"National Geographic (2024)"}],
+  cite:"National Geographic. (2024). La carrera espacial, paso a paso. https://www.nationalgeographic.com.es/llegada-del-hombre-a-la-luna/carrera-espacial-paso-a-paso_14369"},
+    
+   {year:"1969",era:"digital",badge:"Era Digital",title:"ARPANET — origen de Internet",
    detail:"<p>DARPA creó ARPANET, una red distribuida sin punto central de fallo, diseñada para sobrevivir un ataque nuclear. El primer mensaje enviado fue 'lo' (de 'login') antes de que el sistema colapsara. Este principio define la arquitectura de Internet hasta hoy (National Geographic América Latina, 2024).</p>",
    ficha:[{label:"Promotor",value:"DARPA (Departamento de Defensa EE.UU.)"},{label:"Primer nodo",value:"UCLA, Stanford, UCSB, Utah"},{label:"Principio",value:"Red distribuida sin punto central de fallo"},{label:"Referencia",value:"National Geographic América Latina (2024)"}],
    cite:"National Geographic América Latina. (2024). ¿Cuál es el origen de Internet? https://www.nationalgeographicla.com/historia/2024/05/cual-es-el-origen-de-internet"},
@@ -487,14 +584,15 @@ const events = [
    detail:"<p>Tim Berners-Lee creó la World Wide Web en el CERN y la puso a disposición pública gratuitamente, rechazando patentarla. La Web no es lo mismo que Internet: es el sistema de páginas hipertextuales que corre sobre la infraestructura de red (CERN, s.f.).</p>",
    ficha:[{label:"Figura",value:"Tim Berners-Lee (1955–)"},{label:"Institución",value:"CERN, Ginebra"},{label:"Distinción",value:"Web ≠ Internet (la Web corre sobre Internet)"},{label:"Referencia",value:"CERN (s.f.)"}],
    cite:"CERN. (s.f.). A short history of the Web. https://home.cern/science/computing/birth-web/short-history-web"},
-  {year:"2000s",era:"digital",badge:"Era Digital",title:"Redes sociales e inteligencia artificial",
-   detail:"<p>La masificación de redes sociales (Facebook 2004, Twitter 2006, Instagram 2010) transformó la esfera pública. El machine learning y el deep learning permitieron que las máquinas aprendieran de datos a escala sin precedentes (Vivelibre, 2024).</p><p>Para Kuhn (2004), representa un cambio de paradigma: no solo cambian las herramientas sino cómo la sociedad concibe el conocimiento.</p>",
-   ficha:[{label:"Hitos",value:"Facebook (2004), Twitter (2006), Instagram (2010)"},{label:"Tecnología",value:"Machine learning, deep learning, big data"},{label:"Referencia",value:"Vivelibre (2024); Kuhn (2004)"}],
-   cite:"Vivelibre. (2024). Evolución de la tecnología. https://www.vivelibre.es/evolucion-de-la-tecnologia-desde-la-prehistoria-hasta-la-era-digital/ — Kuhn, T. S. (2004). La estructura de las revoluciones científicas (2.ª ed.). Fondo de Cultura Económica."},
+  {year:"2000s",era:"digital",badge:"Era Digital",title:"Redes sociales",
+  detail:"<p>Desde comienzos del siglo XXI, las redes sociales comenzaron a expandirse rápidamente, transformando la forma en que las personas se comunican e interactúan. Plataformas como Facebook (2004), Twitter (2006) e Instagram (2010) marcaron el crecimiento de estos espacios digitales y su integración en la vida cotidiana (Telefónica, s.f.).</p><p>Este fenómeno dio lugar a nuevas formas de comunicación, intercambio de información y construcción de la esfera pública digital (Telefónica, s.f.).</p>",
+  ficha:[{label:"Hitos",value:"Facebook (2004), Twitter (2006), Instagram (2010)"},{label:"Impacto",value:"Comunicación digital · Interacción social · Esfera pública en línea"},{label:"Referencia",value:"Telefónica (s.f.)"}],
+  cite:"Telefónica. (s.f.). Redes sociales: origen e historia. https://www.telefonica.com/es/sala-comunicacion/blog/redes-sociales-origen-historia/"},
+
   {year:"2022 — hoy",era:"digital",badge:"Era Digital",title:"Inteligencia artificial generativa",
-   detail:"<p>El surgimiento de sistemas capaces de producir texto, imágenes y código con coherencia humana representa el hito más reciente de la aceleración tecnológica. Los avances se producen más rápido de lo que las instituciones sociales pueden asimilarlos (Vivelibre, 2024).</p><p>Para Kuhn (2004), este tipo de transformación es un cambio de paradigma: no cambian solo las herramientas, sino la forma en que la sociedad concibe el conocimiento, el trabajo y la creatividad humana.</p>",
-   ficha:[{label:"Hitos",value:"ChatGPT (2022), modelos multimodales (2023–)"},{label:"Área",value:"IA generativa · Ingeniería en Sistemas"},{label:"Desafíos",value:"Ética, responsabilidad social, sesgos"},{label:"Referencia",value:"Vivelibre (2024); Kuhn (2004)"}],
-   cite:"Vivelibre. (2024). Evolución de la tecnología. https://www.vivelibre.es/evolucion-de-la-tecnologia-desde-la-prehistoria-hasta-la-era-digital/ — Kuhn, T. S. (2004). La estructura de las revoluciones científicas (2.ª ed.). Fondo de Cultura Económica."},
+  detail:"<p>La inteligencia artificial generativa se consolidó recientemente con sistemas capaces de producir texto, imágenes y código a partir de grandes volúmenes de datos. Estos avances se basan en el desarrollo previo del aprendizaje automático y las redes neuronales, que evolucionaron hasta permitir modelos cada vez más complejos (Dataversity, s.f.).</p><p>Herramientas como ChatGPT y los modelos multimodales representan una nueva etapa en la evolución de la inteligencia artificial, con un impacto creciente en distintos ámbitos de la sociedad (Dataversity, s.f.).</p>",
+  ficha:[{label:"Hitos",value:"ChatGPT (2022), modelos multimodales (2023–)"},{label:"Área",value:"IA generativa · Ingeniería en Sistemas"},{label:"Base tecnológica",value:"Machine learning · Redes neuronales profundas"},{label:"Referencia",value:"Dataversity (s.f.)"}],
+  cite:"Dataversity. (s.f.). A brief history of generative AI. https://www.dataversity.net/articles/a-brief-history-of-generative-ai/"},
 ];
 
 let currentEra = 'all';
